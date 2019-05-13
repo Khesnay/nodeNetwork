@@ -1,0 +1,17 @@
+Problem specifications:
+
+One often uses graphs to model transportation networks—networks whose edges carry some
+sort of traffic and whose nodes act as “switches” passing traffic between different edges.
+Consider, for example, a highway system in which the edges are highways and the nodes are
+interchanges; or a computer network in which the edges are links that can carry packets and the
+nodes are switches; or a fluid network in which edges are pipes that carry liquid, and the nodes
+are junctures where pipes are plugged together. Network models of this type have several
+ingredients: capacities on the edges, indicating how much they can carry; source nodes in the
+graph, which generate traffic; sink (or destination) nodes in the graph, which can “absorb”
+traffic as it arrives; and finally, the traffic itself, which is transmitted across the edges. 
+
+Solving it:
+My approach at first was to randomize everything, edges and nodes, as I encounter few problems such as Nodes being linked to each other I came up with a different approach which was to first establish a graph then proceed to randomize it.
+
+To solve this problem I used a BFS (Breath First Search) algorithm that I tweaked a bit in order to establish connection through Edges and Nodes. It has a Big O notation of O(n).
+
